@@ -93,7 +93,7 @@ const HomePage = () => {
 
     const getSearchData = async () => {
       const res = await axios.get(
-        `hhttps://video-streaming-backend.onrender.com/api/videos/search?title=${searchQuery}`
+        `https://video-streaming-backend.onrender.com/api/videos/search?title=${searchQuery}`
       );
       setSearchedVideos(res.data);
     };
